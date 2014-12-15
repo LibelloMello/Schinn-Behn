@@ -1,0 +1,39 @@
+package SchinnoBehn;
+
+import java.util.*;
+
+public class CustomerRegister {
+
+	ArrayList<Customer> customerArray = new ArrayList<Customer>();
+	
+	public void setCustomerArray(ArrayList<Customer> newCustomerArray) {
+		customerArray = newCustomerArray;
+	}
+
+	public ArrayList<Customer> getCustomerArray() {
+		return customerArray;
+	}
+
+	public void addCustomer(Customer customer) {
+		customerArray.add(customer);
+	}
+
+	public Customer findCustomer(int custNr) {
+		for (Customer c : this.customerArray) {
+			if (c.getCustNr() == (custNr)) {
+				return c;
+			}
+		}
+		return null;
+	}
+
+	
+
+	public void removeCustomer(int custNr) {
+		Customer c = this.findCustomer(custNr);
+		if (c != null) {
+			this.customerArray.remove(c);
+		}
+	}
+
+}

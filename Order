@@ -1,0 +1,28 @@
+package SchinnoBehn;
+
+public class Order {
+	private int orderNr;
+	private String orderOwner;
+	
+	
+	public int totalPrice(int totalPrice) {
+		for(OrderRad tmp : totalArray) { 
+			
+			
+		}
+	}
+	public String getOrderOwner() {
+		return orderOwner; 
+	}
+	public void setOrderOwner(String orderOwner) {
+		this.orderOwner = orderOwner; 
+	}
+	public int getOrderNr() {
+		return orderNr;
+	}
+	public void setOrderNr(int orderNr) {
+		this.orderNr = orderNr;
+	}
+
+
+}

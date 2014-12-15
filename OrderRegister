@@ -1,0 +1,38 @@
+package SchinnoBehn;
+
+import java.util.*;
+
+public class OrderRegister {
+	
+	ArrayList orderArray = new ArrayList<Order>();
+	
+	
+	public void setOrderArray(ArrayList<Order> newOrderArray) {
+		orderArray = newOrderArray; 
+	}
+	public ArrayList<Order> getOrderArray() {
+		return orderArray; 
+	}
+	
+	public void addOrder(Order order) {
+		orderArray.add(order);
+	}
+	
+	public String findOrder() {
+	for(Order tmp : orderArray) {
+		if(tmp = (getOrderNr)) {
+			return getOrderNr getOrderOwner; 
+		}
+	}
+
+}
+	public void removeOrder(String OrderNr) {
+		Order o = this.findOrder(orderNr);
+		if (o != null) {
+		this.orderArray.remove(o);
+		}
+	}
+}
+
+
+
